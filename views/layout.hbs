@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Manu website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="/stylesheets/sitioweb2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/javascripts/Sitioweb2.js">
+    
+    <style>
+        body {
+            background-image: linear-gradient(#041320 #a01fa0, #f2709c);
+            font-family: 'Open Sans', sans-serif;
+            border: 2px solid rgb(234, 151, 245);
+            box-shadow: inset 0 0 5px purple, 0 0 10px rgb(245, 7, 245);
+            /* Ajusta la fuente del texto */
+        }
+
+        .carousel-container {
+            margin-top: 70px;
+            /* Margen superior para dejar espacio para la barra de navegación */
+        }
+
+        /* Estilos para el contenido del carrusel */
+        .hola-estilos {
+            color: #fff;
+            /* Color del texto */
+            font-size: 36px;
+            /* Tamaño del texto */
+            font-weight: bold;
+            /* Grosor del texto */
+        }
+
+        .hola-2 {
+            color: #fff;
+            /* Color del texto */
+            font-size: 24px;
+            /* Tamaño del texto */
+            margin-top: 20px;
+            /* Margen superior */
+        }
+    </style>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-solid bg-solid fixed-top"
+        style="background-color: linear-gradient(to right, #a01fa0, #f2709c); border: 0.5px solid #ea97f5; box-shadow: inset 0 0 5px purple, 0 0 10px rgb(245, 7, 245);  ">
+        <div class="container px-60 px-lg-100 d-flex justify-content-center">
+            <a class="navbar-brand" href="#Home" id="Home">
+                <img src="images/yasound11.png" alt="Icono de Yasound" class="navbar-logo" style="padding: 0;">
+                <!-- Agregar la clase "navbar-logo" para ajustar el tamaño de la imagen -->
+            </a>
+            <button class="navbar-toggler" style="background-color:#54004a;" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="Inicio">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="categorias" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="#Instrumentales">Instrumentales</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#!">Categorias</a></li>
+                            <!-- <li><hr class="dropdown-divider" /></li>-->
+                            <li><a class="dropdown-item" href="generos">Generos</a></li>
+                            <li><a class="dropdown-item" href="categorias">Sonidos populares</a></li>
+                            <li><a class="dropdown-item" href="Lanzamientos">Nuevos lanzamientos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Novedades">Novedades</a></li>
+                    <li class="nav-item1"><a class="nav-link" href="conocenos">Conocenos</a></li>
+                </ul>
+                <div class="navbar">
+                    <div class="navbar-item search-form">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" "position-center" type="search" placeholder="Buscar"
+                                aria-label="Buscar">
+                            <button class="btn btn-outline-success" type="submit">
+                                <img src="\images\search_24px.png" alt="sea">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/Group (1).png" alt="profil">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!--<li><hr class="dropdown-divider" /></li>-->
+                            <li><a class="dropdown-item" href="login">Iniciar sesion</a></li>
+                            <li><a class="dropdown-item" href="Registro">Registrarse</a></li>
+                            <li><a class="dropdown-item" href="Perfil">Perfil</a></li>
+                            <li><a class="dropdown-item" href="Ajustes">Ajuste</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+  </head>
+<br>
+    
+  <body>
+
+
+    {{{body}}}
+  </body>
+<footer class="py-5 bg-dark ">
+        <div class="container ">
+            <p class="m-0 text-center text-white">Copyright &copy; By Manuel Perez villani</p>
+        </div>
+    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="/public/javascripts/Sitioweb2.js"></script>
+
+</footer>
+
+</html>

@@ -1,0 +1,26 @@
+<div class="container form-registerRrs" style="margin:150px auto">
+    <div class="row">
+        <div class="col-6 offset-3 text-white">
+            <h4>Agregar una nueva novedad</h4>
+            <form action="/admin/novedades/agregar"  method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" style="margin-bottom: 5px;" placeholder="Titulo"
+                        name="Titulo">
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" style="margin-bottom: 5px;" placeholder="Subtitulo"
+                        name="Subtitulo"></textarea>
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" style="margin-bottom: 10px;" placeholder="Cuerpo"
+                        name="Cuerpo">
+</textarea>
+                </div>
+                <button type="submit" style="margin:auto " class="btn btn-primary3 text-white">Guardar</button>
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

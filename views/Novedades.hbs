@@ -1,0 +1,61 @@
+
+
+
+<div  class="container  " style="margin:100px  ">
+    <div class="row">
+        <div class="col" >
+            <p class="text-right text-white col-md-4 margin-top:-9px;">Hola {{usuario}}!
+              <a href="/admin/login/logout" 
+              class="btn btn-primary3 ">cerrar sesión
+               <i class="fa fa-sign-out " aria-hidden=true></i></a>
+                
+               </p>
+             </div> 
+    </div>
+    <div class="form-registerRrs">
+        <div class="col 7 text-white" style= 'margin-top: -9px ;'>
+            <h3>listado de Novedades</h3>
+            <ul class="lista-novedades">
+{{#each novedades}}
+<li>
+<a href="javascript:void(0);" data-toggle="modal"
+data-target="#modal {{id}}">
+<img src="/images/novedadesl.jpg"> {{titulo}}
+</a>
+</lie>
+
+
+        <div class=" col-2 text-right">
+            <a href="/routes/Novedades.js" class="btn btn-primary3 "> <i class="fas fa-plus">
+            </i> Nuevo </a>
+            </div>
+        <table class="table">
+<thead class="thead-dark">
+<tr>
+<th scope="col">#</th>
+<th scope="col">Título</th>
+<th scope="col" class="text-center">Acciones</th>
+<Jtr>
+</thead>
+<tbody>
+    {{#each Novedades}}
+    
+<tr>
+<th scope="row">{{id}}</th>
+<td>{{Titulo}}</td>
+<td class="text-center">
+<a href= "#" class="btn btn-sm btn-secondary"><i class="fa fa-pencil"></i></a>
+<a href="/admin/novedades/eliminar/{{id}}" class="btn btn-sm btn-secondary">
+<i class="fa fa-trash"></i></a>
+</td>
+</tr>
+{{/each}}
+</tbody>
+</table>
+    </div>
+        
+
+</div>
+        
+    
+
