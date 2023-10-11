@@ -1,0 +1,31 @@
+app.get('/', function(req, res) {
+  var conocido = Boolean(req.session.nombre);
+  
+  res.render('Loguearse', {
+  title: 'Sesiones en Express.js',
+  conocido: conocido,
+  nombre: req.session.nombre
+  });
+});
+  
+  app.post('/Inisiars', function(req, res) { 
+    
+    
+    var nombre = req.body.nombre
+
+    if (req.body.nombre) {
+  req.session.nombre= req.body.nombre
+  }
+  res.redirect('/');
+});
+
+  app.get('/salir', function (req, res) {
+     req.session.destroy();
+      res.redirect('/')
+    });
+
+    app.use(session({
+        secret:'Manuvillani1',
+        resave: false,
+        saveUninitialized:true
+      }));
